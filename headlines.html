@@ -3,9 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Headlines newspaper</title>
-    <link rel="stylesheet" href="/css/headlines.css">
+    <link rel="stylesheet" href="css/headlines.css">
+    <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
+    <script type="text/javascript" src="lib/assert.js"></script>
+    <script type="text/javascript" src="js/articles.js"></script>
   </head>
   <body>
+
+    <h1>News Summary</h1>
+
+    <form class="endpoint-form" action="headlines.html" method="post" onsubmit="return false;">
+      <input id="endpoint-input" type="text" name="keyword" placeholder="Search content">
+      <input id="btn-search" type="submit" name="search" value="search content">
+    </form>
+
+    <div class="headlines-articles">
+      <table id="headlines-articles-table">
+        <th>Image</th>
+        <th>Title</th>
+
+      </table>
+    </div>
 
     <script type="text/javascript" src="js/interface.js"></script>
   </body>

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GiadaSimonetti/news-summary-challenge/issues"
   },
-  "homepage": "https://github.com/GiadaSimonetti/news-summary-challenge#readme"
+  "homepage": "https://github.com/GiadaSimonetti/news-summary-challenge#readme",
+  "dependencies": {
+    "aylien_textapi": "^0.6.0"
+  }
 }
