@@ -10,7 +10,7 @@ document.getElementById("btn-search").addEventListener("click", function() {
   httpGetAsync(url, handleResponse);
 });
 
-function handleResponse(mary) {
+function handleResponse(item) {
   var txt = document.createTextNode(articles.response.results[0].webTitle);
   var table = document.getElementById("headlines-articles-table");
   var tr = document.createElement("tr");
@@ -23,14 +23,14 @@ function handleResponse(mary) {
   table.appendChild(tr);
 }
 
-function httpGetAsync(theUrl, bob) {
+function httpGetAsync(theUrl, callBack) {
   var request = new XMLHttpRequest();
 
   request.onreadystatechange = function() {
     if (request.readyState == 4) {
       if (this.status >= 200 && this.status < 400) {
         articles = JSON.parse(request.responseText);
-        bob(articles);
+        callBack(articles);
       } else {
         return ":(";
       }
