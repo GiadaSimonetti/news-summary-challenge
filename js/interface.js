@@ -21,6 +21,14 @@ function handleResponse(item) {
   var td = document.createElement("td");
   var td2 = document.createElement("td");
 
+  // var arr = articles.response.results
+  //   var posts = arr.map((news, index) => (
+  //       key={index}
+  //       id={news.id}
+  //       title={news.title}
+  //       author={news.author}
+  //   ));
+
   // var a = document.createElement("a");
 
   td.appendChild(txt);
