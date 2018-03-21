@@ -21,14 +21,14 @@ function handleResponse(item) {
   var td = document.createElement("td");
   var td2 = document.createElement("td");
 
-  var a = document.createElement("a");
+  // var a = document.createElement("a");
 
   td.appendChild(txt);
   tr.appendChild(td);
   tr.appendChild(td2);
   // a.setAttribute('id', 'number-' + notepad.notes.length);
-  a.setAttribute("href", "#" + articles.response.results[0].webUrl);
-  td2.appendChild(a);
+  // a.setAttribute("href", "#" + articles.response.results[0].webUrl);
+  // td2.appendChild(a);
   table.appendChild(tr);
 }
 
